@@ -13,7 +13,7 @@ class FileExplorer (QWidget):
         layout = QVBoxLayout()
 
         self.model = QFileSystemModel()
-        self.model.setRootPath('')
+        self.model.setRootPath('/home')
 
         self.tree = QTreeView()
         self.tree.setModel(self.model)
